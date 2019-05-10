@@ -1,4 +1,14 @@
-.idea/
-build/
 .gradle/
 *.iml
+
+.idea/
+out/
+
+#Gradle
+gradle/
+gradlew
+gradlew.bat
+build/
+.gradle/
+.DS_Store
+.class

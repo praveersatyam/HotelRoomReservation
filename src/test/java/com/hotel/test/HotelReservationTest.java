@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 public class HotelReservationTest {
 
     @Test
-    public void findRoomsByHotelAndDateTest01(){
+    public void findHotelForRegularCustomerFor3WeekDays(){
         List<Hotel> hotelList = new ArrayList<>();
         List<String> dayList = new ArrayList<>();
         Hotel Lakewood = DataInitializer.setHotelDetails("Lakewood",3);
@@ -36,7 +36,7 @@ public class HotelReservationTest {
     }
 
     @Test
-    public void findRoomsByHotelAndDateTest02(){
+    public void findHotelForRegularCustomerOnWeekdayAndWeekends(){
         List<Hotel> hotelList = new ArrayList<>();
         List<String> dayList = new ArrayList<>();
         Hotel Lakewood = DataInitializer.setHotelDetails("Lakewood",3);
@@ -58,7 +58,7 @@ public class HotelReservationTest {
     }
 
     @Test
-    public void findRoomsByHotelAndDateTest03(){
+    public void findHotelForRewardsCustomerOnWeekdayAndWeekends(){
         List<Hotel> hotelList = new ArrayList<>();
         List<String> dayList = new ArrayList<>();
         Hotel Lakewood = DataInitializer.setHotelDetails("Lakewood",3);
@@ -80,7 +80,7 @@ public class HotelReservationTest {
     }
 
     @Test
-    public void findRoomsByHotelAndDateTestForOptimizedRatingAndCost(){
+    public void findHotelForRewardsCustomerOnWeekdayAndWeekendsAndSameCosts(){
         List<Hotel> hotelList = new ArrayList<>();
         List<String> dayList = new ArrayList<>();
         Hotel Lakewood = DataInitializer.setHotelDetails("Lakewood",3);
@@ -98,7 +98,7 @@ public class HotelReservationTest {
     }
 
     @Test
-    public void findRoomsByHotelAndDateTestForMultipleDates(){
+    public void findHotelForRewardsCustomerForWholeWeek(){
         List<Hotel> hotelList = new ArrayList<>();
         List<String> dayList = new ArrayList<>();
         Hotel Lakewood = DataInitializer.setHotelDetails("Lakewood",3);

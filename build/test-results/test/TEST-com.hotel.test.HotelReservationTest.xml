@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hotel.test.HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-10T05:39:00" hostname="INpraveersatyam.local" time="0.003">
+<testsuite name="com.hotel.test.HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-10T05:46:08" hostname="INpraveersatyam.local" time="0.003">
   <properties/>
-  <testcase name="findRoomsByHotelAndDateTestForOptimizedRatingAndCost" classname="com.hotel.test.HotelReservationTest" time="0.003"/>
+  <testcase name="findRoomsByHotelAndDateTestForMultipleDates" classname="com.hotel.test.HotelReservationTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

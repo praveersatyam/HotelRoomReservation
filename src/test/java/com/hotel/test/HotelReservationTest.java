@@ -97,4 +97,34 @@ public class HotelReservationTest {
         assertEquals("Bridgewood", result);
     }
 
+    @Test
+    public void findRoomsByHotelAndDateTestForMultipleDates(){
+        List<Hotel> hotelList = new ArrayList<>();
+        List<String> dayList = new ArrayList<>();
+        Hotel Lakewood = DataInitializer.setHotelDetails("Lakewood",3);
+        Hotel Bridgewood = DataInitializer.setHotelDetails("Bridgewood",4);
+        Hotel Ridgewood = DataInitializer.setHotelDetails("Ridgewood",5);
+        hotelList.add(Lakewood);
+        hotelList.add(Bridgewood);
+        hotelList.add(Ridgewood);
+        String date1 = "26Mar2009(thur)";
+        String date2 = "27Mar2009(fri)";
+        String date3 = "28Mar2009(sat)";
+        String date4 = "28Mar2009(sun)";
+        String date5 = "29Mar2009(mon)";
+        String date6 = "29Mar2009(tues)";
+        String date7 = "31Mar2009(wed)";
+        dayList.add(date1);
+        dayList.add(date2);
+        dayList.add(date3);
+        dayList.add(date4);
+        dayList.add(date5);
+        dayList.add(date6);
+        dayList.add(date7);
+        dayList = DataParser.getListOfDateByInputStringList(dayList);
+        HotelFinder hotelFinder = new HotelFinder();
+        String result = hotelFinder.findBestHotelAvailableByDate(hotelList, dayList, "Rewards");
+        assertEquals("Lakewood", result);
+    }
+
 }

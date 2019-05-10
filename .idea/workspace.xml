@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="001971b5-9ef0-4da0-968c-3dea5bd14ee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hotel/util/DataParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.hotel.test.HotelReservationTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.hotel.test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.hotel.test.HotelReservationTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/service/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/util/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/service/HotelFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/service/HotelFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hotel/service/TariffCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hotel/util/TariffCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hotel/test/HotelReservationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hotel/test/HotelReservationTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -87,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hotel/test/HotelReservationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="426">
+              <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -312,27 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HotelReservationTest.findRoomsByHotelAndDateTestForOptimizedRatingAndCost">
-    <configuration name="HotelReservationTest.findRoomsByHotelAndDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.hotel.test.HotelReservationTest.findRoomsByHotelAndDate&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.HotelReservationTest.findRoomsByHotelAndDateTestForMultipleDates">
     <configuration name="HotelReservationTest.findRoomsByHotelAndDateTest01" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -393,6 +359,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="HotelReservationTest.findRoomsByHotelAndDateTestForMultipleDates" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.hotel.test.HotelReservationTest.findRoomsByHotelAndDateTestForMultipleDates&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="HotelReservationTest.findRoomsByHotelAndDateTestForOptimizedRatingAndCost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -415,11 +401,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.HotelReservationTest.findRoomsByHotelAndDateTestForMultipleDates" />
         <item itemvalue="Gradle.HotelReservationTest.findRoomsByHotelAndDateTestForOptimizedRatingAndCost" />
         <item itemvalue="Gradle.HotelReservationTest.findRoomsByHotelAndDateTest01" />
         <item itemvalue="Gradle.HotelReservationTest.findRoomsByHotelAndDateTest03" />
         <item itemvalue="Gradle.HotelReservationTest.findRoomsByHotelAndDateTest02" />
-        <item itemvalue="Gradle.HotelReservationTest.findRoomsByHotelAndDate" />
       </list>
     </recent_temporary>
   </component>
@@ -437,9 +423,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HotelReservationTest_findRoomsByHotelAndDateTest02 - 2019.05.10 at 10h 57m 17s.xml">
-      <configuration name="HotelReservationTest.findRoomsByHotelAndDateTest02" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="HotelReservationTest_findRoomsByHotelAndDateTest02 - 2019.05.10 at 10h 57m 39s.xml">
       <configuration name="HotelReservationTest.findRoomsByHotelAndDateTest02" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -465,6 +448,9 @@
       <configuration name="HotelReservationTest.findRoomsByHotelAndDateTest01" configurationId="GradleRunConfiguration" />
     </history-entry>
     <history-entry file="HotelReservationTest_findRoomsByHotelAndDateTestForOptimizedRatingAndCost - 2019.05.10 at 11h 08m 37s.xml">
+      <configuration name="HotelReservationTest.findRoomsByHotelAndDateTestForOptimizedRatingAndCost" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="HotelReservationTest_findRoomsByHotelAndDateTestForOptimizedRatingAndCost - 2019.05.10 at 11h 09m 00s.xml">
       <configuration name="HotelReservationTest.findRoomsByHotelAndDateTestForOptimizedRatingAndCost" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
@@ -699,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hotel/test/HotelReservationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="426">
+          <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

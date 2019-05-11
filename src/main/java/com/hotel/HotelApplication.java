@@ -1,6 +1,7 @@
 package com.hotel;
 
 import com.hotel.entity.Hotel;
+import com.hotel.enums.DayOfWeekEnum;
 import com.hotel.service.HotelFinder;
 import com.hotel.util.DataInitializer;
 import com.hotel.util.DataParser;
@@ -21,6 +22,7 @@ public class HotelApplication {
             StringTokenizer stz = new StringTokenizer(input);
             List<Hotel> hotelList = new ArrayList<>();
             List<String> dayList = new ArrayList<>();
+            List<DayOfWeekEnum> dayEnumList;
             Hotel Lakewood = DataInitializer.setHotelDetails("Lakewood", 3);
             Hotel Bridgewood = DataInitializer.setHotelDetails("Bridgewood", 4);
             Hotel Ridgewood = DataInitializer.setHotelDetails("Ridgewood", 5);
@@ -34,9 +36,9 @@ public class HotelApplication {
                     dayList.add(stz.nextToken().replace(",", ""));
                 }
             }
-            dayList = DataParser.getListOfDateByInputStringList(dayList);
+            dayEnumList = DataParser.getListOfDateByInputStringList(dayList);
             HotelFinder hotelFinder = new HotelFinder();
-            String result = hotelFinder.findBestHotelAvailableByDate(hotelList, dayList, customerType);
+            String result = hotelFinder.findBestHotelAvailableByDate(hotelList, dayEnumList, customerType);
             System.out.println(result);
         }
     }

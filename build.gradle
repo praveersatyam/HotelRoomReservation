@@ -18,6 +18,13 @@ task fatJar(type: Jar) {
     with jar
 }
 
+jar {
+    manifest {
+        attributes(
+                "Class-Path": configurations.compile.collect { it.getName() }.join(' '))
+    }
+}
+
 repositories {
     mavenCentral()
 }

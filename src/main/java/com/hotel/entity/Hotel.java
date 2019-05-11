@@ -7,6 +7,7 @@ public class Hotel {
     private Integer rating;
     private Long noOfRooms;
     private List<Room> roomList;
+    private Rates rates;
 
     public String getName() {
         return name;
@@ -38,5 +39,13 @@ public class Hotel {
 
     public void setRoomList(List<Room> roomList) {
         this.roomList = roomList;
+    }
+
+    public Rates getRates() {
+        return rates;
+    }
+
+    public void setRates(Rates rates) {
+        this.rates = rates;
     }
 }

@@ -12,23 +12,7 @@ public class HotelFinder {
         Integer resultRating = Integer.MAX_VALUE;
         String resultHotelName = "";
         for (Hotel hotel : hotelList) {
-            cost = 0.0;
-            for (DayOfWeekEnum dayOfWeek : dayOfWeekList) {
-                if (customerType.equals(Constants.REGULAR_CUSTOMER)) {
-                    if (DayOfWeekEnum.SATURDAY == dayOfWeek || DayOfWeekEnum.SUNDAY == dayOfWeek) {
-                        cost += hotel.getRates().getRegularWeekend();
-                    } else {
-                        cost += hotel.getRates().getRegularWeekDays();
-                    }
-                } else {
-                    if (DayOfWeekEnum.SATURDAY == dayOfWeek || DayOfWeekEnum.SUNDAY == dayOfWeek) {
-                        cost += hotel.getRates().getRewardsWeekend();
-                    } else {
-                        cost += hotel.getRates().getRewardsWeekDays();
-                    }
-                }
-            }
-
+            cost = findCostForHotelByDayList(dayOfWeekList, customerType, cost, hotel);
             if (resultSum >= cost) {
                 if (resultSum == cost) {
                     if (hotel.getRating() < resultRating) {
@@ -44,5 +28,25 @@ public class HotelFinder {
 
         }
         return resultHotelName;
+    }
+
+    private Double findCostForHotelByDayList(List<DayOfWeekEnum> dayOfWeekList, String customerType, Double cost, Hotel hotel) {
+        cost=0.0;
+        for (DayOfWeekEnum dayOfWeek : dayOfWeekList) {
+            if (customerType.equals(Constants.REGULAR_CUSTOMER)) {
+                if (DayOfWeekEnum.SATURDAY == dayOfWeek || DayOfWeekEnum.SUNDAY == dayOfWeek) {
+                    cost += hotel.getRates().getRegularWeekend();
+                } else {
+                    cost += hotel.getRates().getRegularWeekDays();
+                }
+            } else {
+                if (DayOfWeekEnum.SATURDAY == dayOfWeek || DayOfWeekEnum.SUNDAY == dayOfWeek) {
+                    cost += hotel.getRates().getRewardsWeekend();
+                } else {
+                    cost += hotel.getRates().getRewardsWeekDays();
+                }
+            }
+        }
+        return cost;
     }
 }

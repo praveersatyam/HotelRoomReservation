@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hotel.test.HotelReservationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-05-10T11:51:46" hostname="INpraveersatyam.local" time="0.003">
+<testsuite name="com.hotel.test.HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-13T07:24:30" hostname="INpraveersatyam.local" time="0.004">
   <properties/>
-  <testcase name="findHotelForRewardsCustomerOnWeekdayAndWeekends" classname="com.hotel.test.HotelReservationTest" time="0.002"/>
-  <testcase name="findHotelForRewardsCustomerOnWeekdayAndWeekendsAndSameCosts" classname="com.hotel.test.HotelReservationTest" time="0.0"/>
-  <testcase name="findHotelForRegularCustomerOnWeekdayAndWeekends" classname="com.hotel.test.HotelReservationTest" time="0.0"/>
-  <testcase name="findHotelForRewardsCustomerForWholeWeek" classname="com.hotel.test.HotelReservationTest" time="0.0"/>
-  <testcase name="findHotelForRegularCustomerFor3WeekDays" classname="com.hotel.test.HotelReservationTest" time="0.0"/>
+  <testcase name="findHotelForRegularCustomerFor3WeekDays" classname="com.hotel.test.HotelReservationTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

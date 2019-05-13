@@ -12,7 +12,7 @@ public class HotelFinder {
         Integer resultRating = Integer.MAX_VALUE;
         String resultHotelName = "";
         for (Hotel hotel : hotelList) {
-            cost = findCostForHotelByDayList(dayOfWeekList, customerType, cost, hotel);
+            cost = findCostForHotelByDayList(dayOfWeekList, customerType, hotel);
             if (resultSum >= cost) {
                 if (resultSum == cost) {
                     if (hotel.getRating() < resultRating) {
@@ -30,8 +30,8 @@ public class HotelFinder {
         return resultHotelName;
     }
 
-    private Double findCostForHotelByDayList(List<DayOfWeekEnum> dayOfWeekList, String customerType, Double cost, Hotel hotel) {
-        cost=0.0;
+    private Double findCostForHotelByDayList(List<DayOfWeekEnum> dayOfWeekList, String customerType, Hotel hotel) {
+            Double cost=0.0;
         for (DayOfWeekEnum dayOfWeek : dayOfWeekList) {
             if (customerType.equals(Constants.REGULAR_CUSTOMER)) {
                 if (DayOfWeekEnum.SATURDAY == dayOfWeek || DayOfWeekEnum.SUNDAY == dayOfWeek) {
